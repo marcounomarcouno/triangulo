@@ -21,7 +21,6 @@ continuar = int(input(saber_tipo))
 if continuar == 1:
     lado_a = int(input('¿Cuál es la medida del primer lado?: '))
     lado_b = int(input('¿Cuál es la medida del segundo lado?: '))
-    lado_c = base
     if lado_a == lado_b and lado_a == base:
         print('Tu tiángulo es equilátero')
     elif lado_a != lado_b and lado_a == base:
