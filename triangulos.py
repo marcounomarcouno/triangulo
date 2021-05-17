@@ -21,14 +21,14 @@ continuar = int(input(saber_tipo))
 if continuar == 1:
     lado_a = int(input('¿Cuál es la medida del primer lado?: '))
     lado_b = int(input('¿Cuál es la medida del segundo lado?: '))
-    lado_c = int(input('¿Cuál es la medida del tercer lado?: '))
-    if lado_a == lado_b and lado_a == lado_c:
+    lado_c = base
+    if lado_a == lado_b and lado_a == base:
         print('Tu tiángulo es equilátero')
-    elif lado_a != lado_b and lado_a == lado_c:
+    elif lado_a != lado_b and lado_a == base:
         print('Tu triángulo es isósceles')
-    elif lado_a == lado_b and lado_b != lado_c:
+    elif lado_a == lado_b and lado_b != base:
         print('Tu triángulo es isósceles')
-    elif lado_a != lado_b and lado_a != lado_c:
+    elif lado_a != lado_b and lado_a != base:
         print('Tu triángulo es escaleno')
 
 elif continuar == 2:
