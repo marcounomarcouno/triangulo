@@ -9,7 +9,7 @@ area = (base * altura) / 2
 print('El área de tu triángulo es: ' + str(area))
 
 saber_tipo = """
-¿Te gustaría conocer de qué tipo es tu triángulo? Sólo necesitas conocer la medida de sus lados.
+¿Te gustaría conocer de qué tipo es tu triángulo? Sólo necesitas conocer la medida de sus dos lados. La base ya la conocemos. :)
 
 Elige una opción:
 1 = Sí
@@ -21,7 +21,7 @@ continuar = int(input(saber_tipo))
 if continuar == 1:
     lado_a = int(input('¿Cuál es la medida del primer lado?: '))
     lado_b = int(input('¿Cuál es la medida del segundo lado?: '))
-    
+
     if lado_a == lado_b and lado_a == base:
         print('Tu tiángulo es equilátero')
     elif lado_a != lado_b and lado_a == base:
